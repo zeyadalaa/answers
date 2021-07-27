@@ -14,6 +14,8 @@ fs.createReadStream('annual-enterprise-survey-2020-financial-year-provisional-cs
 })
   .on('end', () => {
     console.log(md5(resultsString));
-    // console.log(resultsString);
+    
+    console.log("-----------------------------------------------------------");
+    console.log(resultsString);
   });
   
